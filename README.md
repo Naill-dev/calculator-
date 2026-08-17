@@ -1,5 +1,3 @@
-Bütövlüklə yenilənmiş, badge-lər, peşəkar görünüş və vizual olaraq səliqəli struktura malik **`README.md`** faylının tam kodu:
-
 ```markdown
 # 🧮 Alpha Calculator
 
