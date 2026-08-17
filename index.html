@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alphaa Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <main class="app">
+    <header class="brand">
+      <div class="brand-mark">N</div>
+      <div>
+        <h1>Alpha Calc</h1>
+        <p>Precision · Keyboard ready</p>
+      </div>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display" role="region" aria-live="polite">
+        <div class="expression" id="expression"></div>
+        <div class="result" id="result">0</div>
+      </div>
+
+      <div class="keys">
+        <button type="button" class="key key-fn" data-action="clear">AC</button>
+        <button type="button" class="key key-fn" data-action="backspace">⌫</button>
+        <button type="button" class="key key-fn" data-action="percent">%</button>
+        <button type="button" class="key key-op" data-op="÷">÷</button>
+
+        <button type="button" class="key" data-num="7">7</button>
+        <button type="button" class="key" data-num="8">8</button>
+        <button type="button" class="key" data-num="9">9</button>
+        <button type="button" class="key key-op" data-op="×">×</button>
+
+        <button type="button" class="key" data-num="4">4</button>
+        <button type="button" class="key" data-num="5">5</button>
+        <button type="button" class="key" data-num="6">6</button>
+        <button type="button" class="key key-op" data-op="−">−</button>
+
+        <button type="button" class="key" data-num="1">1</button>
+        <button type="button" class="key" data-num="2">2</button>
+        <button type="button" class="key" data-num="3">3</button>
+        <button type="button" class="key key-op" data-op="+">+</button>
+
+        <button type="button" class="key key-zero" data-num="0">0</button>
+        <button type="button" class="key" data-action="decimal">.</button>
+        <button type="button" class="key key-eq" data-action="equals">=</button>
+      </div>
+    </section>
+
+    <p class="hint">Keyboard: numbers · + − * / · Enter · Esc · Backspace</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
